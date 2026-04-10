@@ -52,11 +52,13 @@
         }
 
         .response-box {
-            height: 500px;
-            border: 1px solid #ccc;
-            background: white;
-            padding: 10px;
-            border-radius: 4px;
+        height: 70vh;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background: white;
+        white-space: pre-wrap;
+        font-family: monospace;
         }
 
         .label {
@@ -77,12 +79,12 @@
         <button id="getSettingsBtn">getSettings</button>
         <button id="getStateBtn">getStateInstance</button>
 
-        <input type="text" value="77772434567" id="phoneMessage">
-        <textarea rows="3" placeholder="Hello World" id="messageText"></textarea>
+        <input type="text" placeholder="Введите номер +7" id="phoneMessage">
+        <textarea rows="3" placeholder="Введите сообщение" id="messageText"></textarea>
         <button id="sendMessageBtn">sendMessage</button>
 
-        <input type="text" value="77772434567" id="phoneFile">
-        <input type="text" placeholder="https://my.site.com/img/horse.png" id="fileUrl">
+        <input type="text" placeholder="Введите номер +7" id="phoneFile">
+        <input type="text" placeholder="Вставьте ссылку на картинку" id="fileUrl">
         <button id="sendFileBtn">sendFileByUrl</button>
     </div>
 
